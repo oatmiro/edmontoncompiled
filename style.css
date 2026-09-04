@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Geist", sans-serif;
+}
+
+.no-margin {
+  margin-top: 0;
+}
+
+
+
+h1 {
+  font-size: 34px;
+}
+
+p {
+  font-size: 20px;
+}
+
+
+
+.container {
+  padding-left: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.center-container {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+ 
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.center-content img {
+  max-width: 55%;
+  height: auto;
+}
+
+.header {
+
+  .logo img {
+    max-height: 25px;
+    width: auto;
+  }
+  
+
+
+    display: flex;
+    justify-content: space-between; /* Pushes logo left and nav links right */
+    align-items: center;            /* Vertically centers both items */
+    padding: 16px 30px;
+
+    .nav-links ul {
+      display: flex;                 /* Lined up horizontally */
+      list-style: none;              /* Removes default bullet points */
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin-left: 20px;             /* Creates gap between links */
+    }
+    
+
+    .nav-links a {
+      color: #799EEE;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    
+
+    .nav-links a:hover {
+        color: black;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      a:focus {
+        outline: 3px solid #799EEE;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      
+      a:active {
+        color: #799EEE;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #000;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus state */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.15);
+}
+
+/* Submit button */
+button[type="submit"] {
+  display: inline-block;
+  padding: 11px 22px;
+  border: 0.5px solid #4F70B8;
+  border-radius: 30px;
+  background: #4F70B8;
+  color: #fff;
+  font-family: "Geist", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover state */
+button[type="submit"]:hover {
+  background: #799EEE;
+  color: #000;
+  border-color: #6687ce;
+}
+
+.footer {
+
+  display: flex;
+    justify-content: space-between; /* Pushes logo left and nav links right */
+    align-items: center;            /* Vertically centers both items */
+    padding: 30px 30px;
+
+  a:link {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .logo img {
+    max-height: 85px;
+    width: auto;
+  }
+}
